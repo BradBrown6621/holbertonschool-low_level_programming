@@ -18,4 +18,5 @@ int main(void)
 	printf("Size of a %li: %ld byte(s)\n", longinteger, sizeof(longinteger));
 	printf("Size of a %lli: %ld byte(s)\n", longerinteger, sizeof(longerinteger));
 	printf("Size of a %f: %ld byte(s)\n", floatnum, sizeof(floatnum));
+	return (0);
 }
