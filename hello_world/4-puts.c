@@ -8,8 +8,6 @@
 
 int main(void)
 {
-	char newstr[] = "Programming is like building a multilingual puzzle\n";
-
-	printf(newstr);
+	printf("Programming is like building a multilingual puzzle\n");
 	return (0);
 }
