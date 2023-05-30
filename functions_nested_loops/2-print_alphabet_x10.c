@@ -8,10 +8,11 @@ void print_alphabet_x10(void)
 {	
 	char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
 	int i = 0;
-	int nestedi = 0;
+	int nestedi;
 
 	while (i < 9)
 	{
+		nestedi = 0;
 		while (alphabet[nestedi] != 0)
 		{
 			_putchar(alphabet[nestedi]);
