@@ -10,7 +10,7 @@
 
 int _islower(int c)
 {
-	if (c[0] < 97)
+	if (c < 97)
 	{
 		_putchar(1);
 	} else
