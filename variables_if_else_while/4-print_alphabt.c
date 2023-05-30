@@ -10,7 +10,7 @@ int main(void)
 {
 	int letters_l = 97;
 
-	while (letters_l < 122)
+	while (letters_l < 123)
 	{
 		if (letters_l == 101)
 		{
