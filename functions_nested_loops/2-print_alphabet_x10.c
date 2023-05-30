@@ -10,7 +10,7 @@ void print_alphabet_x10(void)
 	int i = 0;
 	int nestedi;
 
-	while (i < 9)
+	while (i < 10)
 	{
 		nestedi = 0;
 		while (alphabet[nestedi] != 0)
