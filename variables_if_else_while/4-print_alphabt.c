@@ -9,19 +9,21 @@
 int main(void)
 {
 	int letters_l = 97;
+
 	while (letters_l < 122)
 	{
-		if (letters_l = 101)
+		if (letters_l == 101)
 		{
-			letters++;
-		} else if (letters_l = 113)
+			letters_l++;
+		} else if (letters_l == 113)
 		{
-			letters++;
+			letters_l++;
 		} else
 		{
 			putchar(letters_l);
-			letters++;
+			letters_l++;
 		}
+	}
 		putchar(10);
 		return (0);
 }
