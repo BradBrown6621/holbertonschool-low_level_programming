@@ -8,7 +8,7 @@ void print_alphabet(void)
 {	
 	char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
 	int i = 0;
-	int nested1 = 0;
+	int nestedi = 0;
 
 	while (i < 9)
 	{
