@@ -4,14 +4,14 @@
  * Return: Always 0 [Success]
  */
 
-int _putchar(void)
+int main(void)
 {
-	char string[] = '_putchar'
+	char string[] = "_putchar";
 	
-	for int i in string
+	for (int i in string)
 	{
-		putchar(i);
+		_putchar(i);
 	}
-	putchar(10);
+	_putchar(10);
 	return (0);
 }
