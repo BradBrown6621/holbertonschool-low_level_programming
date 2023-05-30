@@ -16,6 +16,7 @@ int main(void)
 		putchar(32);
 		putchar(46);
 		putchar(32);
+		numbers++;
 	}
 	return (0);
 }

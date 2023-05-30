@@ -17,7 +17,7 @@ int main(void)
 		ascii_1_10++;
 	}
 
-	while (ascii_a_f < 123)
+	while (ascii_a_f < 103)
 	{
 		putchar(ascii_a_f);
 		ascii_a_f++;
