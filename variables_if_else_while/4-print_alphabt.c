@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	letters_l = 97;
+	int letters_l = 97;
 	while (letters_l < 122)
 	{
 		if (letters_l = 101)
