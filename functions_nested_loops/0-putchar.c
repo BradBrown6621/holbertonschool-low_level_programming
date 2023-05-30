@@ -8,8 +8,9 @@
 int main(void)
 {
 	char string[] = "_putchar";
+	unsigned long int i;
 
-	for (unsigned long int i; i < sizeof(string); i++)
+	for (i = 0; i < sizeof(string); i++)
 	{
 		_putchar(i);
 	}
