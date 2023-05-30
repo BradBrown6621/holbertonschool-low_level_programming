@@ -3,7 +3,9 @@
 /**
  * _isalpha - Entry point
  *
+ * @c: number to be checked for case
  *
+ * Return: 1 if c is an alphabet char, 2 otherwise
  */
 
 int _isalpha(int c)
