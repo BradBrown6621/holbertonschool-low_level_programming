@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * main - Entry point
  *
@@ -7,8 +8,8 @@
 int main(void)
 {
 	char string[] = "_putchar";
-	
-	for (int i in string)
+
+	for (unsigned long int i; i < sizeof(string); i++)
 	{
 		_putchar(i);
 	}
