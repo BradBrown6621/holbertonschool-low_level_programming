@@ -12,7 +12,7 @@ int main(void)
 
 	for (i = 0; i < sizeof(string); i++)
 	{
-		_putchar(i);
+		_putchar(string[i]);
 	}
 	_putchar(10);
 	return (0);
