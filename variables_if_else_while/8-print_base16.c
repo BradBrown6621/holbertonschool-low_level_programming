@@ -7,20 +7,20 @@
 
 int main(void)
 {
-	int ascii_1_-_10 = 48;
+	int ascii_1_10 = 48;
 
-	int ascii_a-f = 97;
+	int ascii_a_f = 97;
 
-	while (ascii_1_-_10 < 58)
+	while (ascii_1_10 < 58)
 	{
-		putchar(ascii_a-f);
-		ascii_1_-_10++;
+		putchar(ascii_1_10);
+		ascii_1_10++;
 	}
 
-	while (ascii_a-f < 123)
+	while (ascii_a_f < 123)
 	{
-		putchar(ascii_a-f);
-		ascii_a-f++;
+		putchar(ascii_a_f);
+		ascii_a_f++;
 	}
 	putchar(10);
 	return (0);
