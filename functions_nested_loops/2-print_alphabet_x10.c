@@ -4,8 +4,6 @@
  * print_alphabet_x10 - Entry point
  *
  * @alphabet[]: array of the alphabet :)
- * @i: increment
- * @nestedi: increment for nested while loop
  */
 
 void print_alphabet_x10(void)
