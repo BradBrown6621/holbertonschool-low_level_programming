@@ -15,7 +15,6 @@ int main(void)
 		putchar(numbers);
 		if (numbers != 57)
 		{
-			putchar(32);
 			putchar(44);
 			putchar(32);
 		}
