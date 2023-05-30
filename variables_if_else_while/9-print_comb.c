@@ -13,9 +13,12 @@ int main(void)
 	while (numbers < 58)
 	{
 		putchar(numbers);
-		putchar(32);
-		putchar(44);
-		putchar(32);
+		if (numbers != 57)
+		{
+			putchar(32);
+			putchar(44);
+			putchar(32);
+		}
 		numbers++;
 	}
 	return (0);
