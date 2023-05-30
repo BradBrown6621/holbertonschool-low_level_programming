@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _print_sign - Entry point
+ * print_sign - Entry point
  *
  * @n: We hold the value to be checked here
  *
@@ -12,7 +12,7 @@ int print_sign(int n)
 {
 	if (n > 0)
 	{
-		_putchar(49);
+		_putchar(43);
 		return (1);
 	}
 	if (n == 0)
@@ -23,7 +23,6 @@ int print_sign(int n)
 	if (n < 0)
 	{
 		_putchar(45);
-		_putchar(49);
 		return (-1);
 	}
 	return (0);
