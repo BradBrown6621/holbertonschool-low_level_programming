@@ -14,7 +14,7 @@ int main(void)
 	{
 		putchar(numbers);
 		putchar(32);
-		putchar(46);
+		putchar(44);
 		putchar(32);
 		numbers++;
 	}
