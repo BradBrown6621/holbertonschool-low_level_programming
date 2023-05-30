@@ -17,7 +17,7 @@ int main(void)
 		ascii_l++;
 	}
 
-	while (ascii_U < 90)
+	while (ascii_U < 91)
 	{
 		putchar(ascii_U);
 		ascii_U++;
