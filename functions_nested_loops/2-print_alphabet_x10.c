@@ -15,8 +15,9 @@ void print_alphabet_x10(void)
 		while (alphabet[nestedi] != 0)
 		{
 			_putchar(alphabet[nestedi]);
-			i++;
+			nestedi++;
 		}
+		i++;
 		_putchar(10);
 	}
 }
