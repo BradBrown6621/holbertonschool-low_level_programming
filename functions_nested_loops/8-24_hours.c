@@ -11,7 +11,7 @@ void jack_bauer(void)
 	int min10 = 0;
 	int min1 = 0;
 
-	while ((hour10 * 10) + hour1 < 25)
+	while ((hour10 * 10) + hour1 < 24)
 	{
 		_putchar(hour10 + 48);
 		_putchar(hour1 + 48);
