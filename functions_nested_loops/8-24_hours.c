@@ -18,6 +18,7 @@ void jack_bauer(void)
 		_putchar(58);
 		_putchar(min10 + 48);
 		_putchar(min1 + 48);
+		_putchar(10);
 
 		if (min1 < 9)
 		{
