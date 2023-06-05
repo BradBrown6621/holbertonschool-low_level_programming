@@ -6,18 +6,27 @@
 
 void more_numbers(void)
 {
-	int io = 0;
-	int ii = 0;
+	int linesprinted = 0;
+	int num10 = 0;
+	int num1 = 0;
 
-	while (io < 11)
+	while (linesprinted < 11)
 	{
-		while (ii < 15)
+		if (num10 > 9)
 		{
-			_putchar(ii + 48);
-			ii++;
+			_putchar(1 + 48);
+			if (num10 == 10)
+			{
+				num1 = 0;
+			}
+		}
+		while (num10 < 15)
+		{
+			_putchar(num1 + 48);
+			num10++;
+			num1++;
 		}
 		_putchar(10);
-		io++;
-		ii = 0;
+		linesprinted++;
 	}
 }
