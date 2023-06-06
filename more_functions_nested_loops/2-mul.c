@@ -3,7 +3,7 @@
 /**
  * mul - Entry point
  *
- * @int a, @int b: Multiplier and Multiplicand
+ * @a, @b: Multiplier and Multiplicand
  *
  * Return: Product
  */
