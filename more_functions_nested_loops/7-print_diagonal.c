@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- * <function name goes here> - Entry point
+ * print_diagonal - Entry point
  *
- * <@parameters go here>: Description
- *
- * Return: <insert return value>
+ * @n: Description
  */
 
 void print_diagonal(int n)
@@ -15,7 +13,7 @@ void print_diagonal(int n)
 
 	while (numlines <= n)
 	{
-		while (numspaces <= numlines)
+		while (numspaces < numlines)
 		{
 			if (numspaces == numlines)
 			{
