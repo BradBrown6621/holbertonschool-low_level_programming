@@ -31,7 +31,3 @@ void print_diagonal(int n)
 		numspaces = 0;
 	}
 }
-\
- \
-  \
-   \
