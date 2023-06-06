@@ -12,7 +12,7 @@ void more_numbers(void)
 
 	while (linesprinted < 11)
 	{
-		if (num10 > 9) //Adds a 1 first if the number is greater than 9
+		if (num10 > 9)
 		{
 			_putchar(1 + 48);
 		}
@@ -20,7 +20,7 @@ void more_numbers(void)
 		{
 			_putchar(num1 + 48);
 			num10++;
-			if (num10 == 10) //Resets num1 to 0 when num10 == 10
+			if (num10 == 10)
 			{
 				num1 = 0;
 			} else
