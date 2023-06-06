@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- * <function name goes here> - Entry point
+ * print_triangle - Entry point
  *
- * <@parameters go here>: Description
- *
- * Return: <insert return value>
+ * @size: dictates the size of the triangle to be printed
  */
 
 void print_triangle(int size)
