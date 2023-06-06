@@ -3,7 +3,7 @@
 /**
  * _strlen - Entry point
  *
- * @*s : String array (pointer?)
+ * @s : String array (pointer?)
  *
  * Return: Always length [SUCCESS]
  */
@@ -16,7 +16,6 @@ int _strlen(char *s)
 	{
 		length++;
 		s++;
-		return (length);
 	}
 	return (length);
 }
