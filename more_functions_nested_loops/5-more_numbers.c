@@ -25,7 +25,7 @@ void more_numbers(void)
 			{
 				num1++;
 			}
-			_putchar(num1);
+			_putchar(num1 + 48);
 			num10++;
 		}
 		num10 = 0;

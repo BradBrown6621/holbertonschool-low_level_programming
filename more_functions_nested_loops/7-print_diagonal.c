@@ -10,6 +10,7 @@ void print_diagonal(int n)
 {
 	int numlines = 0;
 	int numspaces = 0;
+
 	if (n <= 0)
 	{
 		_putchar(10);

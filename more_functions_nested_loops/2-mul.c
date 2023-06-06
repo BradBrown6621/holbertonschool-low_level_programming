@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * <function name goes here> - Entry point
+ * mul - Entry point
  *
- * <@parameters go here>: Description
+ * @int a, @int b: Multiplier and Multiplicand
  *
- * Return: <insert return value>
+ * Return: Product
  */
 
 int mul(int a, int b)

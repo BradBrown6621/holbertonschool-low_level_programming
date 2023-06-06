@@ -2,9 +2,11 @@
 
 /**
  * fizz_buzz - Entry point
+ *
+ * Return: Always 0 [Success]
  */
 
-void main(void)
+int main(void)
 {
 	int num = 1;
 
@@ -25,4 +27,5 @@ void main(void)
 		}
 		num++;
 	}
+	return (0);
 }
