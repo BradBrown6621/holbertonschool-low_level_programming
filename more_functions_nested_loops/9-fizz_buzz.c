@@ -4,7 +4,7 @@
  * fizz_buzz - Entry point
  */
 
-void fizz_buzz(void)
+void main(void)
 {
 	int num = 1;
 
