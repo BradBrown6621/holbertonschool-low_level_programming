@@ -39,6 +39,5 @@ void print_triangle(int size)
 			i = 0;
 			_putchar(10);
 		}
-		_putchar(10);
 	}
 }
