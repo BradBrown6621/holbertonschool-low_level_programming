@@ -12,14 +12,12 @@ void more_numbers(void)
 
 	while (linesprinted < 11)
 	{
-		if (num10 > 9)
-		{
-			_putchar(1 + 48);
-		}
 		while (num10 < 15)
 		{
-			_putchar(num1 + 48);
-			num10++;
+			if (num10 > 9)
+			{
+				_putchar(1 + 48);
+			}
 			if (num10 == 10)
 			{
 				num1 = 0;
@@ -27,7 +25,10 @@ void more_numbers(void)
 			{
 				num1++;
 			}
+			_putchar(num1);
+			num10++;
 		}
+		num10 = 0;
 		_putchar(10);
 		linesprinted++;
 	}

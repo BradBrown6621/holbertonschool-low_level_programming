@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- * <function name goes here> - Entry point
+ * print_line - Entry point
  *
- * <@parameters go here>: Description
- *
- * Return: <insert return value>
+ * @n: n is the number of underscores printed
  */
 
 void print_line(int n)
@@ -15,5 +13,6 @@ void print_line(int n)
 	while (i <= n)
 	{
 		_putchar(95);
+		i++;
 	}
 }
