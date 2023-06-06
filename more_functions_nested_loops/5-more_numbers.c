@@ -18,16 +18,17 @@ void more_numbers(void)
 			{
 				_putchar(1 + 48);
 			}
-			if (num10 == 10)
+			_putchar(1 + 48);
+			if (num10 == 9)
 			{
 				num1 = 0;
 			} else
 			{
 				num1++;
 			}
-			_putchar(num1 + 48);
 			num10++;
 		}
+		num1 = 0;
 		num10 = 0;
 		_putchar(10);
 		linesprinted++;
