@@ -3,7 +3,8 @@
 /**
  * mul - Entry point
  *
- * @a, @b: Multiplier and Multiplicand
+ * @a: Multiplier
+ * @b: Multiplicand
  *
  * Return: Product
  */
