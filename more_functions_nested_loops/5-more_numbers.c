@@ -10,7 +10,7 @@ void more_numbers(void)
 	int num10 = 0;
 	int num1 = 0;
 
-	while (linesprinted < 11)
+	while (linesprinted < 10)
 	{
 		while (num10 < 15)
 		{
