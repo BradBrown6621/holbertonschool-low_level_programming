@@ -11,13 +11,15 @@ void print_square(int size)
 	int rows = 0;
 	int columns = 0;
 
-	while (numlines < size)
+	while (rows < size)
 	{
 		while (columns < size)
 		{
 			_putchar(35);
 			columns++;
 		}
+		_putchar(10);
+		columns = 0;
 		rows++;
 	}
 	_putchar(10);

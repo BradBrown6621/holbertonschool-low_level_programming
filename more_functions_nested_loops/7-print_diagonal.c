@@ -13,9 +13,9 @@ void print_diagonal(int n)
 
 	while (numlines <= n)
 	{
-		while (numspaces < numlines)
+		while (numspaces <= numlines)
 		{
-			if (numspaces == numlines)
+			if (numspaces >= numlines)
 			{
 				_putchar(92);
 			} else
