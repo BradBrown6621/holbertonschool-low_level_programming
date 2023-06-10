@@ -18,7 +18,7 @@ int main(void)
 
 {
 
-	    char s[11] = "My Schoool";
+	    char s[11] = "123456789";
 
 
 
