@@ -1,6 +1,5 @@
 #include "main.h"
 #include "2-strlen.c"
-#include "_putchar.c"
 
 /**
  * puts_half - Entry point
