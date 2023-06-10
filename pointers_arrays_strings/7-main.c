@@ -9,5 +9,9 @@ int main(void)
 
 	str = "012345678";
 	puts_half(str);
+
+	str = "Holberton!";
+	puts_half(str);
+
 	return (0);
 }
