@@ -1,11 +1,13 @@
 #include "main.h"
+#include "2-strlen.c"
 
 /**
- * <function name goes here> - Entry point
+ * _strcat - Entry point
  *
- * <@parameters go here>: Description
+ * @dest: Description
+ * @src: Desc
  *
- * Return: <insert return value>
+ * Return: Always dest
  */
 
 char *_strcat(char *dest, char *src)
@@ -13,7 +15,7 @@ char *_strcat(char *dest, char *src)
 	int i;
 	int lengths = _strlen(dest);
 
-	for (i = 0; i <= _strlen(src); i++;)
+	for (i = 0; i <= _strlen(src); i++)
 	{
 		dest[(i + lengths)] = src[i];
 	}

@@ -1,11 +1,13 @@
 #include <stdio.h>
 
 /**
- * <function name goes here> - Entry point
+ * _strncpy - Entry point
  *
- * <@parameters go here>: Description
+ * @dest: Description
+ * @src: desc
+ * @n: number
  *
- * Return: <insert return value>
+ * Return: dest
  */
 
 char *_strncpy(char *dest, char *src, int n)
