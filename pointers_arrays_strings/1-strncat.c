@@ -1,11 +1,14 @@
 #include "main.h"
+#include "2-strlen.c"
 
 /**
- * <function name goes here> - Entry point
+ * _strncat - Entry point
  *
- * <@parameters go here>: Description
+ * @dest: Description
+ * @src: the source string
+ * @n: the number of bytes to be concatenated
  *
- * Return: <insert return value>
+ * Return: Always dest [Success]
  */
 
 char *_strncat(char *dest, char *src, int n)
