@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include <libmy.a>
+#include <stdlib.h>
+#include "_strlen.c"
 
 /**
  * _strdup - Duplicates a string and returns the result
@@ -20,7 +21,7 @@ char *_strdup(char *str)
 		return(NULL);
 	}
 
-	dupstr = malloc(sizeof(char) * _strlen);
+	dupstr = malloc(sizeof(char) * _strlen(str));
 
 	if (dupstr == NULL)
 	{
