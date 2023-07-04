@@ -13,9 +13,14 @@
 
 int **alloc_grid(int width, int height)
 {
+	int temp;
 	int **gridptr;
 	int rows;
 	int cols;
+
+	temp = width;
+	width = height;
+	height = temp;
 
 	gridptr = malloc(sizeof(int*) * width);
 
