@@ -84,6 +84,9 @@ int main(void)
 
 	        a = _calloc(98, sizeof(char));
 
+		simple_print_buffer(a, 98);
+		putchar(10);
+
 		    strcpy(a, "Best");
 
 		        strcpy(a + 4, " School! :)\n");
