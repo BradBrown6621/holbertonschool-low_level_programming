@@ -1,12 +1,12 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.>
 
 /**
- * <function name goes here> - Entry point
+ * free_grid - Entry point
  *
- * <@parameters go here>: Description
- *
- * Return: <insert return value>
+ * @grid: A 2d array to be free'd
+ * @height: Height of array
  */
 
 void free_grid(int **grid, int height)
