@@ -14,8 +14,7 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *ptr;
-	char *crawler;
+	char *ptr;
 	unsigned int i;
 
 	if ((nmemb == 0) || (size == 0))
@@ -30,12 +29,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
-	crawler = ptr;
-
 	for (i = 0; i < nmemb; i++)
 	{
-		*crawler = 0;
-		crawler++;
+		ptr[i] = 0;
 	}
 
 	return (ptr);
