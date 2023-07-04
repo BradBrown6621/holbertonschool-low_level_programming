@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -18,12 +19,12 @@ int **alloc_grid(int width, int height)
 	int rows;
 	int cols;
 
-	if (width == NULL)
+	if (width == 0)
 	{
 		return (NULL);
 	}
 
-	if (height == NULL)
+	if (height == 0)
 	{
 		return (NULL);
 	}
