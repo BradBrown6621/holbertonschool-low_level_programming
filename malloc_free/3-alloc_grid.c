@@ -18,11 +18,21 @@ int **alloc_grid(int width, int height)
 	int rows;
 	int cols;
 
+	if (width == NULL)
+	{
+		return (NULL);
+	}
+
+	if (height == NULL)
+	{
+		return (NULL);
+	}
+
 	temp = width;
 	width = height;
 	height = temp;
 
-	gridptr = malloc(sizeof(int*) * width);
+	gridptr = malloc(sizeof(int *) * width);
 
 	if (gridptr == NULL)
 	{
