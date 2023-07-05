@@ -2,7 +2,7 @@
 #include "function_pointers.h"
 
 /**
- * <function name goes here> - Entry point
+ * int_index - Entry point
  *
  * @array: Array whose indexes will be compare
  * @size; size of the array
@@ -18,13 +18,16 @@ int int_index(int *array, int size, int (*cmp)(int))
 
 	crawler = array;
 
-	for (i = 0; i <= size; i++)
+	if (array && cmp)
 	{
-		if((*cmp)(*crawler))
+		for (i = 0; i <= size; i++)
 		{
-			return(i);
+			if((*cmp)(*crawler))
+			{
+				return(i);
+			}
+			crawler++;
 		}
-		crawler++;
 	}
 	return(-1);
 }
