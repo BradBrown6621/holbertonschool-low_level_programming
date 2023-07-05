@@ -3,11 +3,13 @@
 #include "dog.h"
 
 /**
- * <function name goes here> - Entry point
+ * new_dog - Entry point
  *
- * <@parameters go here>: Description
+ * @name: Name of dog
+ * @age: Age of dog
+ * @owner: Owner of dog
  *
- * Return: <insert return value>
+ * Return: ptr [SUCCESS]
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
@@ -20,6 +22,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	if (ptr == NULL)
 	{
+		free(ptr);
 		return (NULL);
 	}
 
