@@ -2,7 +2,7 @@
 #include "function_pointers.h"
 
 /**
- * <function name goes here> - Entry point
+ * print_name - Callback function to two possible functions
  *
  * @name: Name to be passed to callback function
  * @f: Callback function

@@ -1,7 +1,8 @@
-#ifndef FuNC_PTRS
-#define FUNC_PTRS 
+#ifndef FuNC_PTRS_H
+#define FUNC_PTRS_H
+#define FUNC_PTRS
 
-void print_name(char *name, void (*f)(char*));
+void print_name(char *name, void (*f)(char *));
 void array_iterator(int *array, size_t size, void (*action)(int));
 int int_index(int *array, int size, int (*cmp)(int));
 
