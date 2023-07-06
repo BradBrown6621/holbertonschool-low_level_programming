@@ -16,6 +16,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *ptr;
 
+	dogn = name;
+
+	dogo = owner;
+
 	ptr = malloc(sizeof(dog_t));
 
 	if (ptr == NULL)
@@ -26,7 +30,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	(*ptr).name = name;
 	(*ptr).age = age;
-	(*ptr).owner = dogo;
+	(*ptr).owner = owner;
 
 	return (ptr);
 }
