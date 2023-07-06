@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "dog.h"
 #include "_strcpy.c"
+#include "_strlen.c"
 
 /**
  * new_dog - Entry point
