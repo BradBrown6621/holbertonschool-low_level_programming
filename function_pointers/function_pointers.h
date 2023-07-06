@@ -1,5 +1,4 @@
-#ifndef FuNC_PTRS_H
-#define FUNC_PTRS_H
+#ifndef FUNC_PTRS
 #define FUNC_PTRS
 
 void print_name(char *name, void (*f)(char *));
