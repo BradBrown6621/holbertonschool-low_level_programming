@@ -2,11 +2,12 @@
 #include <stdlib.h>
 
 /**
- * <function name goes here> - Entry point
+ * str_concat - Entry point
  *
- * <@parameters go here>: Description
+ * @s1: Description
+ * @s2: Description
  *
- * Return: <insert return value>
+ * Return: Char
  */
 
 char *str_concat(char *s1, char *s2)
@@ -15,7 +16,7 @@ char *str_concat(char *s1, char *s2)
 	int i;
 	char *crawler;
 
-	ptr = malloc(((sizeof(s1) - 1) + (sizeof(s2) - 1)) - 1);
+	ptr = malloc(((sizeof(s1) - 1) + (sizeof(s2) - 1)) - 2);
 
 	if (ptr == NULL)
 	{
