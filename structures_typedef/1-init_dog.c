@@ -3,9 +3,12 @@
 #include "dog.h"
 
 /**
- * <function name goes here> - Entry point
+ * init_dog - Entry point
  *
- * <@parameters go here>: Description
+ * @d: Description
+ * @name: Description
+ * @age: Age of dog
+ * @: Owner of dog
  *
  * Return: <insert return value>
  */
@@ -14,6 +17,7 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (d == NULL)
 	{
+		printf("%s\n", "Ok");
 		exit(1);
 	}
 
