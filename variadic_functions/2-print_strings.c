@@ -2,11 +2,12 @@
 #include "variadic_functions.h"
 
 /**
- * <function name goes here> - Entry point
+ * print_strings - Entry point
  *
- * <@parameters go here>: Description
+ * @separator: Description
+ * @n: Num of arguements
  *
- * Return: <insert return value>
+ * Return: NOTHING!!
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
