@@ -8,7 +8,7 @@
  * @d: Description
  * @name: Description
  * @age: Age of dog
- * @: Owner of dog
+ * @owner: Owner of dog
  *
  * Return: <insert return value>
  */
