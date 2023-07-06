@@ -11,7 +11,7 @@
  * Description: Characteristics of a dog
  */
 
-struct dog
+typedef struct dog
 {
 	char *name;
 	float age;
