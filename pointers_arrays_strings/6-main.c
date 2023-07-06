@@ -1,5 +1,7 @@
 #include "main.h"
 
+#include <stdio.h>
+
 
 
 /**
@@ -15,16 +17,19 @@
 int main(void)
 
 {
-	char *str;
 
-	str = "0123456789";
-	puts2(str);
-	_putchar(10);
+	    char str[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\nhello world! hello-world 0123456hello world\thello world.hello world\n";
 
-	str = "012";	
-	puts2(str);
-	_putchar(10);
+	        char *ptr;
 
-	return (0);
+
+
+		    ptr = cap_string(str);
+
+		        printf("%s", ptr);
+
+			    printf("%s", str);
+
+			        return (0);
 
 }
