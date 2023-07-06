@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "dog.h"
+#include "_strcpy.c"
 
 /**
  * new_dog - Entry point
@@ -24,9 +25,28 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	(*ptr).name = name;
+	(*ptr).name = malloc(sizeof(char) * (_strlen(name) + 1));
+
+	if ((*ptr).name == NULL)
+	{
+		free(d);
+		return (NULL);
+	}
+
+	(*ptr).owner = malloc(sizeof(char) * (_strlen(owner) + 1));
+
+	if ((*ptr).owner == NULL)
+	{
+		free((*d).name);
+		free(d);
+		return (NULL);
+	}
+
+	(*ptr) = _strcpy((*ptr).name, name);
+
 	(*ptr).age = age;
-	(*ptr).owner = owner;
+
+	(*ptr).owner = _strcpy((*ptr).name, name);
 
 	return (ptr);
 }
