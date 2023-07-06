@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include "_islower.c"
 
 /**
  * cap_string: Capitalizes all words
@@ -27,17 +28,18 @@ char *cap_string(char *str)
 
 	ptr = str;
 
+	if (_islower(ptr[0]) == 0)
+	{
+		ptr[0] = ptr[0] - 32;
+	}
+
 	for (i = 0; ptr[i] != 0; i++)
 	{
-		if ((ptr[i] >= 65) && (ptr[i] <= 90))
+		if (ptr[i] == 32 || ptr[i] == 9 || ptr[i] == 10 || ptr[i] == 46)
 		{
-			i = end_word(ptr, i);
-		}
-		if ((ptr[i] >= 97) && (ptr[i] <= 122))
-		{
-			if ((ptr[i + 1] >= 97) && (ptr[i] <= 122))
+			if (_islower(ptr[i + 1]) == 0)
 			{
-				ptr[i] = ptr[i] - 32;
+				ptr[i + 1] = ptr[i + 1] - 32;
 				i = end_word(ptr, i);
 			}
 		}
