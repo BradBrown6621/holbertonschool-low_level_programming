@@ -21,11 +21,11 @@ size_t print_list(const list_t *h)
 			return (i);
 		} else
 		{
-			printf("[%lu] %s\n", h->len, h->str);
+			printf("[%u] %s\n", h->len, h->str);
 		}
 		h = h->next;
 	}
-	printf("[%lu] %s\n", h_>len, h->str);
+	printf("[%u] %s\n", h->len, h->str);
 	i++;
 	return (i);
 }
