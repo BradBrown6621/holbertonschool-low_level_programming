@@ -1,14 +1,36 @@
 #include <stdio.h>
+#include "function_pointers.h"
 
 /**
- * <function name goes here> - Entry point
+ * get_op_func - Entry point
  *
- * <@parameters go here>: Description
+ * @s: Character to search ops for algorithm type
  *
- * Return: <insert return value>
+ * Return: The relavent function (or NULL on failure)
  */
 
-int main(void)
+int (*get_op_func(char *s))(int, int)
 {
+	op_t ops[] = {
+		{"+", op_add},
+		{"-", op_sub},
+		{"*", op_mul},
+		{"/", op_div},
+		{"%", op_mod},
+		{NULL, NULL}
+	};
+	
+	int i;
 
+	i = 0;
+
+	while (ops[i].op != NULL)
+	{
+		if (*(ops[i].op) != *s)
+			{
+				return (ops[i].f);
+			}
+		i++;
+	}
+	return (NULL);
 }

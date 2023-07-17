@@ -10,8 +10,10 @@
  * Return: <insert return value>
  */
 
-int main(int argc, int *argv)
+int main(int argc, int **argv)
 {
+	int result;
+
 	if (argc != 4)
 	{
 		printf("%s\n", "Error");
@@ -26,6 +28,8 @@ int main(int argc, int *argv)
 		}
 		exit(99);
 	}
+
+	result = (*get_op_func(argv[2])(atoi(argv[1]), atoi(argv[3]);
 
 	printf("%d\n", result);
 }
