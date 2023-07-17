@@ -10,7 +10,7 @@
 
 size_t list_len(const list_t *h)
 {
-	long unsigned int i;
+	unsigned long int i;
 
 	if (h == NULL)
 	{
