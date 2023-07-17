@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 
 /**
  * list_len - Gets the length of a singly-linked list
