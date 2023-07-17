@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_node_end- A function that adds a newnode with new values to the end of a list
+ * add_node_end- A function that initializes a newnode to the end of a list
  *
  * @head: The pointer that points to the first node in the list
  * @str: String to be copied to the new node
@@ -21,7 +21,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	{
 		free(s);
 		free(newnode);
-		return(NULL);
+		return (NULL);
 	}
 
 	newnode->next = NULL;
