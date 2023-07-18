@@ -16,11 +16,10 @@ void free_list(list_t *head)
 	{
 		return;
 	}
-	
+
 	next = head->next;
 	free(head->str);
 	free(head);
 
 	free_list(next);
-	return;
 }
