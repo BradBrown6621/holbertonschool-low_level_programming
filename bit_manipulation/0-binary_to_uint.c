@@ -1,35 +1,35 @@
 #include "main.h"
 
 /**
- * <function name goes here> - Entry point
+ * binary_to_uint - Conversion function
  *
- * <@parameters go here>: Description
+ * @b: String representing binary number
  *
- * Return: <insert return value>
+ * Return: Int conversion of b
  */
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int i = 0;
-	unsigned int len = strlen(b);
 	unsigned int result = 0;
-	int base = 1;
+	int i = 0;
 
 	if (b == NULL)
 	{
 		return (0);
 	}
 
-	for (int i < len; i >= =; i--)
+	while (b[i] != '\0')
 	{
+		if (b[i] != '0' && b[i] != '1')
+		{
+			return (o);
+		}
+		result  = result * 2;
 		if (b[i] == '1')
 		{
-			result = result + base;
-		} else if (b[i] != '0')
-		{
-			return (0);
+			result = result + 1;
 		}
-		base *= 2;
+		i++;
 	}
 	return (result);
 }
