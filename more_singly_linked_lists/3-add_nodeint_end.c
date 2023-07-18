@@ -9,7 +9,7 @@
  * Return: Pointer to the newly created node
  */
 
-list_t *add_node_end(list_t **head, const int n)
+list_t *add_nodeint_end(list_t **head, const int n)
 {
 	list_t *ptr;
 
