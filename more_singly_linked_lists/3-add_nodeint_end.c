@@ -9,11 +9,11 @@
  * Return: Pointer to the newly created node
  */
 
-list_t *add_nodeint_end(list_t **head, const int n)
+listint_t *add_nodeint_end(list_t **head, const int n)
 {
-	list_t *ptr;
+	listint_t *ptr;
 
-	list_t *newnode = malloc(sizeof(list_t));
+	listint_t *newnode = malloc(sizeof(list_t));
 
 	if (newnode == NULL)
 	{
