@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_node_end- A function that initializes a newnode to the end of a list
+ * add_nodeint_end- A function that initializes a newnode to the end of a list
  *
  * @head: The pointer that points to the first node in the list
  * @n: int to be copied to the new node
