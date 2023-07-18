@@ -8,7 +8,7 @@
  * Return: NOTHING!!!
  */
 
-void free_list(list_t *head)
+void free_listint(list_t *head)
 {
 	list_t *next;
 
