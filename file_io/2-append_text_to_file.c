@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * <function name goes here> - Entry point
+ * append_text_to_file - Entry point
  *
- * <@parameters go here>: Description
+ * @filename: Name of file to be accessed
+ * @text_content: String to be copied to the end of filename
  *
- * Return: <insert return value>
+ * Return: 1 if successful, -1 otherwise
  */
 
 int append_text_to_file(const char *filename, char *text_content)
@@ -20,10 +21,20 @@ int append_text_to_file(const char *filename, char *text_content)
 	}
 
 	fd = open(filename, O_WRONLY | O_APPEND);
-	
+
 	if (fd == -1)
 	{
 		return (-1);
+	}
+
+	if (text_content == NULL)
+	{
+		close(fd);
+		if (fd == -1)
+		{
+			return (-1);
+		}
+		return (0);
 	}
 
 	written = write(fd, text_content, text_len);
