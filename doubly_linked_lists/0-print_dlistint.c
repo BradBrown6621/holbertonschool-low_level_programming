@@ -2,7 +2,7 @@
 
 /**
  * print_dlistint - Prints the data from a doubly-linked list
- * 
+ *
  * @h: The list to be printed
  *
  * Return: The size of the list that was printed
