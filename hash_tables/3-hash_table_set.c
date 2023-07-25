@@ -13,7 +13,8 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	const char *valuedup = strdup(value);
-	unsigned long int index = key_index(key, ht->size);
+	unsigned long int index;
+	index = key_index((const unsigned char *)key, ht->size);
 
 	hash_node_t *newnode;
 

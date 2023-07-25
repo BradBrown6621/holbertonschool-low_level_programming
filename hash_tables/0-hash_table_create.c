@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_t - Generates a new, blank hash table
+ * hash_table_create - Generates a new, blank hash table
  *
  * @size: The size of the table
  *
