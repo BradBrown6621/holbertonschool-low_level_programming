@@ -16,19 +16,19 @@ hash_table_t *hash_table_create(unsigned long int size)
 
 	if (hashtable == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
 
 	hashtable->size = size;
-	hashtable->array = malloc(size * sizeof(hash_node_t*));
+	hashtable->array = malloc(size * sizeof(hash_node_t *));
 
 	if (hashtable->array == NULL)
 	{
 		free(hashtable);
-		return NULL;
+		return (NULL);
 	}
 
-	memset(hashtable->array, 0, size * sizeof(hash_node_t*));
+	memset(hashtable->array, 0, size * sizeof(hash_node_t *));
 
 	return (hashtable);
 }
