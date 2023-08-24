@@ -10,15 +10,22 @@
  * Return: First integer occurrence of value in array
  */
 
-int binary_search(int *array, size_t size, int value);
+int binary_search(int *array, size_t size, int value)
 {
-	int *left = 0;
-	int *right = size - 1;
-	int middle;
+	size_t left = 0;
+	size_t right = size - 1;
+	size_t middle;
+	size_t i;
 
 	while (left <= right)
 	{
 		middle = left + (right - left) / 2;
+		printf("Searching in array: ");
+		for (i = left; i < right; i++)
+		{
+			printf("%i, ", array[i]);
+		}
+		printf("%i\n", array[right]);
 
 		if (array[middle] == value)
 		{
@@ -31,5 +38,6 @@ int binary_search(int *array, size_t size, int value);
 		{
 			right = middle - 1;
 		}
+	}
 	return (-1);
 }
