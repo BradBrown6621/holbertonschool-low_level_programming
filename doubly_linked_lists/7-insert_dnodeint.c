@@ -13,7 +13,7 @@ dlistint_t **find_index(dlistint_t **head, unsigned int idx)
 {
 	unsigned int i;
 
-	for (i = 0; i < idx - 1; i++)
+	for (i = 0; i < idx; i++)
 	{
 		if (!(*head))
 		{
@@ -54,17 +54,22 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	}
 
 	head = find_index(head, idx);
+	
+	if (!head)
+	{
+		return (NULL);
+	}
 	node->next = NULL;
 	node->prev = NULL;
 	node->n = n;
 
-	node->prev = *head;
-	node->next = (*head)->next;
-	(*head)->next = node;
-	if ((*head)->next)
+	node->next = *head;
+	node->prev = (*head)->prev;
+	if ((*head)->prev)
 	{
-		(*head)->next->prev = node;
+		(*head)->prev->next = node;
 	}
+	(*head)->prev = node;
 
 	return (node);
 }
