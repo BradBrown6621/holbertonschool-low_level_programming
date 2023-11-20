@@ -2,7 +2,7 @@
 /**
  * print_dlistint - Prints dlistint_t to STDOUT
  *
- * @dlistint_t - Doubly linked list to print
+ * @h - Doubly linked list to print
  *
  * Return: Number of nodes as size_t
  */
