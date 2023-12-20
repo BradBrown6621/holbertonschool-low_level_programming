@@ -4,7 +4,7 @@ void node_prepend(hash_node_t *node, hash_table_t *ht, unsigned long int index)
 {
 	if (ht->array[index] != NULL)
 	{
-		node->next = ht->array[index];
+		free(ht->array[index]);
 	}
 	ht->array[index] = node;
 }
