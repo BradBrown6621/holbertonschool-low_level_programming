@@ -55,21 +55,25 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	targetNode = traverse_for_key(ht->array[index], key);
 
+	value_cpy = malloc(stlen(value + 1));
+	if (!value_cpy)
+		return (0);
+	strcpy(value_cpy, value);
+
 	if (ht->array[index] != NULL && targetNode != NULL)
 	{
+		free(targetNode->value);
 		targetNode->value = value_cpy;
 		return (1);
 	}
 
 	node = malloc(sizeof(hash_node_t));
 	key_cpy = malloc(strlen(key) + 1);
-	value_cpy = malloc(strlen(value) + 1);
 
-	if (!node || !key_cpy || !value_cpy)
+	if (!node || !key_cpy)
 		return (0);
 
 	strcpy(key_cpy, key);
-	strcpy(value_cpy, value);
 
 	node->key = key_cpy;
 	node->value = value_cpy;
