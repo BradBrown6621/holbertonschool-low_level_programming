@@ -55,7 +55,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	targetNode = traverse_for_key(ht->array[index], key);
 
-	value_cpy = malloc(stlen(value + 1));
+	value_cpy = malloc(strlen(value + 1));
 	if (!value_cpy)
 		return (0);
 	strcpy(value_cpy, value);
