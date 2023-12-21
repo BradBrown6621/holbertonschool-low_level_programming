@@ -15,7 +15,7 @@ hash_node_t *traverse_for_key(hash_node_t *node, const char *key)
 
 int validate_params(hash_table_t *ht, const char *key, const char *value)
 {
-	if (!ht)
+	if (ht == NULL)
 		return (0);
 
 	if (!key || strcmp(key, "") == 0)
