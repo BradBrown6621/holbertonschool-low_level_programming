@@ -31,7 +31,7 @@ int add_node_to_ht(hash_table_t *ht, hash_node_t *node, unsigned long int index)
 {
 	if (ht->array[index] != NULL)
 	{
-		node->next = ht->array[index]->next;
+		node->next = ht->array[index];
 	}
 	ht->array[index] = node;
 	return (1);
@@ -46,7 +46,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *node = NULL;
 	hash_node_t *targetNode = NULL;
 
-	validate_params(ht, key, value);
+	if (validate_params(ht, key, value) == 0)
+	{
+		return (0);
+	}
 
 	index = key_index((const unsigned char *)key, size);
 
