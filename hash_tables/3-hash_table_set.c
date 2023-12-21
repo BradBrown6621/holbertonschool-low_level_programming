@@ -15,7 +15,7 @@ hash_node_t *traverse_for_key(hash_node_t *node, const char *key)
 
 int validate_params(hash_table_t *ht, const char *key, const char *value)
 {
-	if (ht == NULL)
+	if (!ht)
 		return (0);
 
 	if (!key || strcmp(key, "") == 0)
@@ -40,7 +40,7 @@ int add_node_to_ht(hash_table_t *ht, hash_node_t *node, unsigned long int index)
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
-	unsigned long int size = ht->size;
+	unsigned long int size;
 	char *key_cpy = NULL;
 	char *value_cpy = NULL;
 	hash_node_t *node = NULL;
@@ -51,6 +51,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	}
 
+	size = ht->size;
 	index = key_index((const unsigned char *)key, size);
 
 	targetNode = traverse_for_key(ht->array[index], key);
