@@ -29,7 +29,10 @@ int validate_params(hash_table_t *ht, const char *key, const char *value)
 
 int add_node_to_ht(hash_table_t *ht, hash_node_t *node, unsigned long int index)
 {
-	node->next = ht->array[index]->next;
+	if (ht->array[index] != NULL)
+	{
+		node->next = ht->array[index]->next;
+	}
 	ht->array[index] = node;
 	return (1);
 }
