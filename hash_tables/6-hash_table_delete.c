@@ -7,6 +7,8 @@ void node_delete(hash_node_t *node)
 		return;
 	}
 	node_delete(node->next);
+	free(node->key);
+	free(node->value);
 	free(node);
 }
 
@@ -23,5 +25,6 @@ void hash_table_delete(hash_table_t *ht)
 	{
 		node_delete(ht->array[i]);
 	}
+	free(ht->array);
 	free(ht);
 }
