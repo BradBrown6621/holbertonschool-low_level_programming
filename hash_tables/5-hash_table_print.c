@@ -2,11 +2,18 @@
 
 int print_hash_nodes(hash_node_t *node)
 {
+	static int notEnds = 0;
 	if (!node)
 	{
+		notEnds = 0;
 		return (0);
 	}
+	if (notEnds)
+	{
+		printf(", ");
+	}
 	printf("'%s': '%s'", node->key, node->value);
+	notEnds = 1;
 	print_hash_nodes(node->next);
 	return (0);
 }
@@ -14,7 +21,7 @@ int print_hash_nodes(hash_node_t *node)
 void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int i;
-	int notStart = 0;
+	int notEnds = 0;
 
 	if (!ht)
 	{
@@ -29,14 +36,12 @@ void hash_table_print(const hash_table_t *ht)
 		{
 			continue;
 		}
-		if (notStart)
+		if (notEnds)
 		{
 			printf(", ");
-		} else
-		{
-			notStart = 1;
 		}
 		print_hash_nodes(ht->array[i]);
+		notEnds = 1;
 	}
 
 	printf("}\n");
