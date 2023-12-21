@@ -10,7 +10,7 @@ hash_node_t *traverse_for_key(hash_node_t *node, const char *key)
 	{
 		return (node);
 	}
-	return(traverse_for_key(node->next, key));
+	return (traverse_for_key(node->next, key));
 }
 
 int validate_params(hash_table_t *ht, const char *key, const char *value)
@@ -21,9 +21,16 @@ int validate_params(hash_table_t *ht, const char *key, const char *value)
 	if (!key || strcmp(key, "") == 0)
 		return (0);
 
-	if(!value || strcmp(value, "") == 0)
+	if (!value || strcmp(value, "") == 0)
 		return (0);
 
+	return (1);
+}
+
+int add_node_to_ht(hash_table_t *ht, hash_node_t *node, unsigned long int index)
+{
+	node->next = ht->array[index]->next;
+	ht->array[index] = node;
 	return (1);
 }
 
@@ -62,5 +69,5 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	node->value = value_cpy;
 	node->next = NULL;
 
-	return (1);
+	return (add_node_to_ht(ht, node, index));
 }
