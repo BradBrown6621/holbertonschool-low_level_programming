@@ -6,6 +6,11 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	unsigned long int hashIndex;
 	hash_node_t *node = NULL;
 
+	if (!ht)
+	{
+		return (NULL);
+	}
+
 	hashIndex = (hash_djb2((const unsigned char *)key)) % ht->size;
 
 	node = ht->array[hashIndex];
